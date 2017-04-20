@@ -12,7 +12,7 @@
 import random
 
 class Book():
-    
+
     def __init__(self, author, title, release_year):
         self.author = author
         self.title = title
@@ -24,11 +24,18 @@ class Bookshelf(Book):
         super().__init__()
             self.empty_bookshelf = []
 
-    def add_books(self, books)
+    def add_books(self, books):
         self.empty_bookshelf.append(books)
 
-    def remove_books(self, books)
+    def remove_books(self, books):
         self.empty_bookshelf.remove(books)
+
+    def query_author(self):
+        for query in empty_bookshelf:
+            if query in empty_bookshelf:
+                empty_bookshelf[query] += 1
+            else:
+                empty_bookshelf[query] = 1
 
 
 my_shelf = BookShelf()
