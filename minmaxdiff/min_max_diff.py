@@ -3,13 +3,6 @@
 # Create basic unit tests for it with at least 3 different test cases
 
 def min_max_diff(numbers):
-    difference = []
-    try:
-        for number in range(len(numbers)):
-            if max(numbers) - min(numbers) == number:
-                difference.append(number)
-        return sum(difference)
-    except ZeroDivisionError:
-        return None
+ print(max(numbers) - min(numbers))
 
-min_max_diff([4,7,3,2,9])
+min_max_diff([4,7,3,2,14])
