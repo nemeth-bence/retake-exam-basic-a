@@ -24,10 +24,10 @@ class Bookshelf(Book):
         super().__init__()
             self.empty_bookshelf = []
 
-    def add_books(self, books):
+    def put(self, books):
         self.empty_bookshelf.append(books)
 
-    def remove_books(self, books):
+    def remove(self, books):
         self.empty_bookshelf.remove(books)
 
     def query_author(self):
