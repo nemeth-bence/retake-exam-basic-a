@@ -7,13 +7,35 @@
 # We should be able to query the favourite author (who has written the most books in the shelf)
 # We should be able to query the earliest published books.
 # We should be able to query the latest published books.
-# Bookself should have a method whitch give us information about the number of books, the earliest and the latest released books, and the favourite author 
-   
+# Bookself should have a method whitch give us information about the number of books, the earliest and the latest released books, and the favourite author
+
+import random
+
+class Book():
+    
+    def __init__(self, author, title, release_year):
+        self.author = author
+        self.title = title
+        self.release_year = release_year
+
+class Bookshelf(Book):
+
+    def __init__(self):
+        super().__init__()
+            self.empty_bookshelf = []
+
+    def add_books(self, books)
+        self.empty_bookshelf.append(books)
+
+    def remove_books(self, books)
+        self.empty_bookshelf.remove(books)
+
+
 my_shelf = BookShelf()
 print(my_shelf.books())
 # Should print out:
 # You have no books here.
-    
+
 my_shelf.put("Douglas Adams", "The Hitchhiker's Guide to the Galaxy", 1979)
 my_shelf.put("Douglas Adams", "Mostly Harmless", 1992)
 my_shelf.put("Frank Herbert", "Dune", 1965)
