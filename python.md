@@ -47,4 +47,4 @@ class Foxi(Dog):
 my_foxi = Foxi()
 ```
 #### Your answer:
-[add your answer here]   
+[Three constructors called, because the program runs through all of them. The order will be Foxi - Dog - Animal.]   
