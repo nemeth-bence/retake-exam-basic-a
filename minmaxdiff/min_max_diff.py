@@ -5,4 +5,4 @@
 def min_max_diff(numbers):
  print(max(numbers) - min(numbers))
 
-min_max_diff([4,7,3,2,14])
+min_max_diff([4,7,3,4,14])

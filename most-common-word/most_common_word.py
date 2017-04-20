@@ -25,7 +25,7 @@ else:
         textfile.close()
 
         most_common_word = max(word_counter, key = word_counter.get)
-        print(most_common_word, word_counter[most_common_word])
+        print('These are the most common words in the given file: ' + most_common_word, word_counter[most_common_word])
 
     except FileNotFoundError:
         print('No source file.')
